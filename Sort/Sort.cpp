@@ -25,3 +25,14 @@ void sort(T arr[], int len)   // sorts an array gven array and length
 		}
 	}
 }
+
+int main()
+{
+	// Make different arrays:
+	string strArr[5] = { "Thomas", "Guy-Man", "Anderson", "Michael", "Joachim" };
+	int intArr[5] = { 6, 9, 2, 4, 3 };
+	float floarArr[5] = { 5.3, 2.2, 7.1, 1.4, 8.0 };
+
+
+
+}

@@ -1,7 +1,4 @@
 #include <iostream> 
-#include <cstdio> 
-#include <cmath> 
-#include <ctime> 
 #include <string> 
 
 
@@ -26,12 +23,25 @@ void sort(T arr[], int len)   // sorts an array gven array and length
 	}
 }
 
+template <typename T>
+void print(T arr[], int len)
+{
+	int i;
+	for (i = 0; i < len; i++)
+	{
+		cout << arr[i] << endl;
+	}
+	cout << endl << endl;
+}
+
 int main()
 {
 	// Make different arrays:
 	string strArr[5] = { "Thomas", "Guy-Man", "Anderson", "Michael", "Joachim" };
 	int intArr[5] = { 6, 9, 2, 4, 3 };
 	float floatArr[5] = { 5.3, 2.2, 7.1, 1.4, 8.0 };
+
+	print(strArr, 5);
 
 	// sort arrays:
 	sort(strArr, 5);

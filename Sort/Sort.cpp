@@ -24,7 +24,7 @@ void sort(T arr[], int len)   // sorts an array gven array and length
 }
 
 template <typename T>
-void print(T arr[], int len)
+void print(T arr[], int len) // Prints an array given an array and it's length
 {
 	int i;
 	for (i = 0; i < len; i++)
@@ -41,7 +41,15 @@ int main()
 	int intArr[5] = { 6, 9, 2, 4, 3 };
 	float floatArr[5] = { 5.3, 2.2, 7.1, 1.4, 8.0 };
 
+	// Testing print template
+	cout << "Printing string array:" << endl;
 	print(strArr, 5);
+
+	cout << "Printing int array:" << endl;
+	print(intArr, 5);
+
+	cout << "Printing float array:" << endl;
+	print(floatArr, 5);
 
 	// sort arrays:
 	sort(strArr, 5);
@@ -52,23 +60,11 @@ int main()
 
 	// Testing printouts
 	cout << "Testing string sort:" << endl;
-	for (i = 0; i < 5; i++) 
-	{
-		cout << strArr[i] << endl;
-	}
-	cout << endl << endl;
+	print(strArr, 5);
 
 	cout << "Testing int sort:" << endl;
-	for (i = 0; i < 5; i++)
-	{
-		cout << intArr[i] << endl;
-	}
-	cout << endl << endl;
+	print(intArr, 5);
 
 	cout << "Testing float sort:" << endl;
-	for (i = 0; i < 5; i++)
-	{
-		cout << floatArr[i] << endl;
-	}
-	cout << endl << endl;
+	print(floatArr, 5);
 }
